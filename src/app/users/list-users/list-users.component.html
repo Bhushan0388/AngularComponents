@@ -1,3 +1,7 @@
 <p>list-users works!</p>
 
-<app-filter-users [channelName]="Cname"></app-filter-users>
+<app-filter-users [channelName]="Cname" (updatedlist)="UpdatetheUser($event)"></app-filter-users>
+
+<h3> Data recive from file {{user|json}}</h3>
+
+<h4>User list {{userlist|json}}</h4>

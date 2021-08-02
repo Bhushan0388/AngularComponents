@@ -20,8 +20,9 @@ export class FilterUsersComponent implements OnInit {
   }
 
   updateuser(){
-    console.log("Clicked on update user");
+    const userobj={user:10,username:'Bhushan Khaladkar'};
     
+    this.updatedlist.emit(userobj);
   }
 
 }
